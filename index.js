@@ -27,7 +27,7 @@ const store = new sessionStore({
 
 app.use(
   session({
-    secret: process.env.SESS_SECRET,
+    secret: "ndsj789f7sdfkdjsfusdfy87fdsfgfge978gdifg8s7dfgsdf789dsftds7",
     resave: true,
     saveUninitialized: true,
     store: store,
@@ -39,7 +39,7 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://bintangyp.github.io"],
   })
 );
 app.use(express.json());
