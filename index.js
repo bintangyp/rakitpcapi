@@ -57,5 +57,6 @@ app.use(PsuRoute);
 app.use(MoreRoute);
 
 // store.sync();
+const PORT = process.env.PORT || 4000;
 
-app.listen(5000, console.log("Service on Port 5000"));
+app.listen(PORT, console.log("Service on Port 4000"));
